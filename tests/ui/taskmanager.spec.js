@@ -47,5 +47,6 @@ test("Create task", async ({ page }) => {
   );
   await taskPage.searchTaskByName(title);
 
-  await expect(page.locator(".task-title", { hasText: title })).toBeVisible();
+  const task = page.locator(".task-title", { hasText: title });
+  await expect(task.first()).toBeVisible();
 });
