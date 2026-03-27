@@ -1,0 +1,26 @@
+[
+  {
+    "username": "user",
+    "password": "user123",
+    "role": "USER",
+    "shouldPass": true
+  },
+  {
+    "username": "testuser",
+    "password": "test123",
+    "role": "USER",
+    "shouldPass": true
+  },
+  {
+    "username": "admin",
+    "password": "admin123",
+    "role": "ADMIN",
+    "shouldPass": true
+  },
+  {
+    "username": "123",
+    "password": "123",
+    "role": "INVALID",
+    "shouldPass": false
+  }
+]
