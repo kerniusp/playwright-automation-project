@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("Get task", async ({ request }) => {
+test("Get task test", async ({ request }) => {
   const response = await request.get("v1/tasks");
   const responseObject = await response.json();
 
@@ -8,7 +8,7 @@ test("Get task", async ({ request }) => {
   console.log(responseObject);
 });
 
-test("Post task", async ({ request }) => {
+test("Post and delete task test", async ({ request }) => {
   const response = await request.post("v1/tasks", {
     headers: {
       Authorization: "test",
